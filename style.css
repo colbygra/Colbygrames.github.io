@@ -110,7 +110,7 @@ header a:hover{
 }
 
 #boxes .box img{
-    width:90px;
+    width:90%;
 }
 
 #showcase2{
@@ -150,4 +150,9 @@ header a:hover{
 li:hover{
     color:#fff555;
     font-size:150%;
+}
+
+
+i{
+    text-decoration: none;
 }
