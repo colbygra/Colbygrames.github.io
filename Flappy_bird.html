@@ -4,9 +4,10 @@
         <meta name="viewpart" content="width=device-width">
         <title>Flappy Football</title>
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="/js/processing.js"></script>
+        <script type="text/javascript" src="./js/processing.js"></script>
     </head>
     <body>
+        
         <header>
             <div class="container">
                 <div id="branding">
@@ -22,7 +23,7 @@
             </div>
         </header>
     
-    <div>
+   
         <h1 style="text-align:center"><i>Welcome To Flappy Football</i></h1>
         <script type="text/processing">
             PImage bg,start, guy, topPipe, botPipe;  
@@ -142,7 +143,7 @@
                }
                if(pipeX[i] < -200)
                {
-                 pipeX[i] = width;  
+                 pipeX[i] = width*2;  
                }
                
                if(gx > (pipeX[i]-55) && gx < pipeX[i] + 55)
@@ -192,6 +193,6 @@
             }
         </script>
         <canvas style="border:10px solid black;"></canvas>
-    </div>
+
 </body>
 </html>

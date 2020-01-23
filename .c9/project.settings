@@ -1,4 +1,7 @@
 {
+    "aws": {
+        "@awsRegion": "us-west-1"
+    },
     "build": {
         "@saveall": true
     },
