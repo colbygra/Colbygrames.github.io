@@ -168,3 +168,10 @@ i{
     border:none;
     height:300px;
 }
+
+#ball{ 
+    border: none;
+    height:400px;
+    width:400px;
+    padding-bottom: 20%;
+}
