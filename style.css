@@ -156,3 +156,15 @@ li:hover{
 i{
     text-decoration: none;
 }
+
+#snake {
+    border: none;
+    padding-left:10%;
+    height:600px;
+    width:600px;
+}
+
+#clock {
+    border:none;
+    height:300px;
+}
