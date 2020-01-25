@@ -18,6 +18,7 @@
                         <li class="current"><a href="index.html">Home</a></li>
                         <li class="current"><a href="Portfolio.html">Portfolio</a></li>
                         <li class="current"><a href="blog.html">Blog</a></li>
+                        <li class="current-page"><a href="Flappy_bird.html">Flappy Football</a></a></li>
                     </ul>
                 </nav>
             </div>
@@ -26,7 +27,7 @@
    
         <h1 style="text-align:center"><i>Welcome To Flappy Football</i></h1>
         <script type="text/processing">
-            PImage bg,start, topPipe, botPipe; //football
+            PImage bg,start, topPipe, botPipe; //football;
             int bgx, bgy, gx, gy, g, Vgy;
             int[] pipeX, pipeY; 
             int gameState, score, highScore;
@@ -36,9 +37,9 @@
               size(1000,800);
               bg = loadImage("./img/bg.png");
               start=loadImage("./img/Grames_startScreen.png");
-              football = loadImage("./img/snake_game.png");
-              botPipe = loadImage("./img/bottom_Pipe.png");
-              topPipe = loadImage("./img/top_Pipe.png");
+              football = loadImage("./img/football.png");
+              botPipe = loadImage("./img/bottom_pipe.png");
+              topPipe = loadImage("./img/top_pipe.png");
               gx = 100;
               gy = 50;
               g = 1; 
@@ -162,13 +163,11 @@
             }
             
             
-            void football()
-            {
-              image(football, gx, gy);
+            void football(){
+             image(football, gx, gy);
               gy = gy + Vgy;
               Vgy = Vgy + g;  
-              if(gy > height || gy < 0)
-              {
+              if(gy > height || gy < 0){
                  fill(255, 0, 0, 140);
                  textSize(24);
                  text("OH NO!!!! THE FOOTBALL FELL OFF THE SCREEN...", 20, 44);
