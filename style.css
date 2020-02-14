@@ -181,3 +181,16 @@ i{
     padding-bottom:20%;
     
 }
+
+#draw{
+    border:none;
+    height:700px;
+    width:800px;
+    padding-top: 20px;
+    padding-left:23%;
+    padding-bottom:50px;
+}
+
+#draw2{
+    padding-left:18%;
+}
